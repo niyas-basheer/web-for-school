@@ -42,21 +42,29 @@
     background-color: rgba(0, 0, 0, 0.5); /* Add some background to icons */
     border-radius: 50%;
 }
-.centered-container {
-    width: 77%; /* 77% of the viewport width */
-    margin: 50px auto 0; /* Add 50px margin on the top and center it horizontally */
-    padding: 20px; /* Add padding for aesthetics */
-    text-align: center; /* Center text inside the container */
+
+.container {
+    margin-top: 200px;
 }
 
-.centered-heading {
-    font-size: 2.5rem; /* Heading size */
-    font-weight: bold; /* Make the heading bold */
-    color: #333; /* Darker color for better readability */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-.centered-description {
-    font-size: 1.2rem; /* Description size */
-    color: #666; /* Lighter color for description */
-    margin-top: 10px; /* Spacing between heading and description */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card-body {
+    padding: 20px;
+}
+.container-text{
+    padding-top: 100px;
 }
