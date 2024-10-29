@@ -43,28 +43,79 @@
     border-radius: 50%;
 }
 
-.container {
-    margin-top: 200px;
+/* Animation Styles */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly lower */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Move to original position */
+    }
 }
 
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+.animate-on-scroll {
+    opacity: 5; /* Initially hidden */
 }
 
-p {
-    font-size: 18px;
-    line-height: 1.5;
+.fade-in {
+    animation: fadeIn 3s forwards; /* 1 second duration, forwards to maintain final state */
 }
 
-.card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Custom styles for full-screen split section */
+.split-section {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full height of the viewport */
 }
 
-.card-body {
+.left-section {
+    background-color: #f8f9fa; /* Light background for the left section */
     padding: 20px;
+    color: #333; /* Darker text for readability */
 }
-.container-text{
-    padding-top: 100px;
+
+.left-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.left-section p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    padding: 0;
+    height: 100%;
+}
+
+.colored-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Each box will take up equal space */
+    color: #333; /* Darker text for readability */
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    border: none; /* No border or spacing between the boxes */
+}
+
+/* Light color backgrounds for boxes */
+.box-light-blue {
+    background-color: #d4e9ff; /* Light blue */
+}
+
+.box-light-green {
+    background-color: #d8f8d8; /* Light green */
+}
+
+.box-light-yellow {
+    background-color: #fffbd5; /* Light yellow */
 }
